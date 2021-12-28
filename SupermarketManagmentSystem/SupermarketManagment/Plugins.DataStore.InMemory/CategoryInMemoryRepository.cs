@@ -1,6 +1,7 @@
 ﻿using CoreBusiness;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UseCases.DataStorePluginInterfaces;
 
 namespace Plugins.DataStore.InMemory
@@ -21,9 +22,46 @@ namespace Plugins.DataStore.InMemory
             };
         }
 
+        public override void AddCategory(Category category)
+        {
+            if(this.categories.Any(x => x.Name.Equals(category.Name, StringComparison.OrdinalIgnoreCase)))
+            {
+                return;
+            }
+            else if(categories != null && categories.Count > 0)
+            {
+                var maxId = categories.Max(x => x.CategoryId);
+                category.CategoryId = maxId + 1;
+            }
+            else
+            {
+                category.CategoryId = 1;
+            }
+            this.categories.Add(category);
+        }
+
+        public override void DeleteCategory(int categoryId)
+        {
+            categories.Remove(GetCategoryById(categoryId));
+        }
+
         public override IEnumerable<Category> GetCategories()
         {
             return categories;
+        }
+
+        public override Category GetCategoryById(int categoryId)
+        {
+            return categories.FirstOrDefault(x => x.CategoryId == categoryId);
+        }
+
+        public override void UpdateCategory(Category category)
+        {
+            var categoryToUpdate = categories.FirstOrDefault(x => x.CategoryId == category.CategoryId);
+            if(categoryToUpdate != null)
+            {
+                categoryToUpdate = category;
+            }
         }
     }
 }

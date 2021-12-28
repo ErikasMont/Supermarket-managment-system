@@ -71,11 +71,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\SupermarketManagment\\SupermarketManagment.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\SupermarketManagment\\SupermarketManagment.csproj",
       "projectName": "SupermarketManagment",
-      "projectPath": "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\SupermarketManagment\\SupermarketManagment.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\SupermarketManagment\\SupermarketManagment.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\SupermarketManagment\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\SupermarketManagment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -96,14 +96,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\CoreBusiness.csproj": {
-              "projectPath": "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\CoreBusiness.csproj"
+            "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\CoreBusiness.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\CoreBusiness.csproj"
             },
-            "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\Plugins.DataStore.InMemory\\Plugins.DataStore.InMemory.csproj": {
-              "projectPath": "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\Plugins.DataStore.InMemory\\Plugins.DataStore.InMemory.csproj"
+            "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\Plugins.DataStore.InMemory\\Plugins.DataStore.InMemory.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\Plugins.DataStore.InMemory\\Plugins.DataStore.InMemory.csproj"
             },
-            "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\UseCases\\UseCases.csproj": {
-              "projectPath": "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\UseCases\\UseCases.csproj"
+            "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\UseCases\\UseCases.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\UseCases\\UseCases.csproj"
             }
           }
         }
