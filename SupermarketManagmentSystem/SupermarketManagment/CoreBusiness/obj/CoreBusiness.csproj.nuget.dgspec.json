@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\CoreBusiness.csproj": {}
+    "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\CoreBusiness.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\CoreBusiness.csproj": {
+    "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\CoreBusiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\CoreBusiness.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\CoreBusiness.csproj",
         "projectName": "CoreBusiness",
-        "projectPath": "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\CoreBusiness.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\CoreBusiness.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\CoreBusiness\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

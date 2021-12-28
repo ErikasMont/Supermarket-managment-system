@@ -10,3 +10,15 @@ C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness
 C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\obj\Debug\net5.0\CoreBusiness.dll
 C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\obj\Debug\net5.0\ref\CoreBusiness.dll
 C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\obj\Debug\net5.0\CoreBusiness.pdb
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\bin\Debug\net5.0\CoreBusiness.deps.json
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\bin\Debug\net5.0\CoreBusiness.dll
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\bin\Debug\net5.0\ref\CoreBusiness.dll
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\bin\Debug\net5.0\CoreBusiness.pdb
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\obj\Debug\net5.0\CoreBusiness.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\obj\Debug\net5.0\CoreBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\obj\Debug\net5.0\CoreBusiness.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\obj\Debug\net5.0\CoreBusiness.AssemblyInfo.cs
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\obj\Debug\net5.0\CoreBusiness.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\obj\Debug\net5.0\CoreBusiness.dll
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\obj\Debug\net5.0\ref\CoreBusiness.dll
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\CoreBusiness\obj\Debug\net5.0\CoreBusiness.pdb

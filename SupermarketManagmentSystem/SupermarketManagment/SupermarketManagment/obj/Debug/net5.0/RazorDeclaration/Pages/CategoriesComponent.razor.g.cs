@@ -13,77 +13,77 @@ namespace SupermarketManagment.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
+#line 1 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
+#line 2 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
+#line 3 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
+#line 4 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
+#line 5 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
+#line 6 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
+#line 7 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
+#line 8 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
+#line 9 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
 using SupermarketManagment;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
+#line 10 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
 using SupermarketManagment.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
+#line 12 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\_Imports.razor"
 using CoreBusiness;
 
 #line default
@@ -98,7 +98,7 @@ using CoreBusiness;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 26 "C:\Users\HP\Desktop\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\Pages\CategoriesComponent.razor"
+#line 35 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\Pages\CategoriesComponent.razor"
        
 
     private List<Category> categories;
@@ -110,11 +110,34 @@ using CoreBusiness;
         categories = ViewCategoryUseCase.Execute().ToList();
     }
 
+    private void OnClickAddCategory()
+    {
+        NavigationManager.NavigateTo("/addcategory");
+    }
+
+    private void EditCategory(Category category)
+    {
+        NavigationManager.NavigateTo($"/editcategory/{category.CategoryId}");
+    }
+
+    private void DeleteCategory(int categoryId)
+    {
+        DeleteCategoryUseCase.Execute(categoryId);
+        LoadCategories();
+    }
+
+    private void LoadCategories()
+    {
+        categories = ViewCategoryUseCase.Execute().ToList();
+    }
+
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UseCases.IDeleteCategoryUseCase DeleteCategoryUseCase { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private UseCases.IViewCategoriesUseCase ViewCategoryUseCase { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591

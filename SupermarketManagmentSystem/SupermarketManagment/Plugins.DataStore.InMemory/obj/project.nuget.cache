@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EH/Y2KtQA5L7N6i4mHHuNVY4v2umSz4sbi3/eKz9cnTokJCFvaiiUKfVooPea1x6z3kixT6r8fS7i411UPBTsQ==",
+  "dgSpecHash": "XA1a8mMUwEv0t3ysfvJaR75Wmfciy9bbGmA8BjzvWg9iePjjwkA0VyWkasTIUPwjd10fFn6Bt18jjbjyinb3yQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Source\\Repos\\Supermarket-managment-system\\SupermarketManagmentSystem\\SupermarketManagment\\Plugins.DataStore.InMemory\\Plugins.DataStore.InMemory.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\SMS\\SupermarketManagmentSystem\\SupermarketManagment\\Plugins.DataStore.InMemory\\Plugins.DataStore.InMemory.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
