@@ -98,7 +98,7 @@ using CoreBusiness;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 31 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\Pages\CategoriesComponent.razor"
+#line 35 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\Pages\CategoriesComponent.razor"
        
 
     private List<Category> categories;
@@ -120,10 +120,22 @@ using CoreBusiness;
         NavigationManager.NavigateTo($"/editcategory/{category.CategoryId}");
     }
 
+    private void DeleteCategory(int categoryId)
+    {
+        DeleteCategoryUseCase.Execute(categoryId);
+        LoadCategories();
+    }
+
+    private void LoadCategories()
+    {
+        categories = ViewCategoryUseCase.Execute().ToList();
+    }
+
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UseCases.IDeleteCategoryUseCase DeleteCategoryUseCase { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private UseCases.IViewCategoriesUseCase ViewCategoryUseCase { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }

@@ -35,6 +35,7 @@ namespace SupermarketManagment
 
             // Dependency injection for in-memory data store
             services.AddScoped<ICategoryRepository, CategoryInMemoryRepository>();
+            services.AddScoped<IProductRepository, ProductInMemoryRepository>();
 
             // Dependency injection for use cases and repositories
             services.AddTransient<IViewCategoriesUseCase, ViewCategoriesUseCase>();
@@ -42,6 +43,7 @@ namespace SupermarketManagment
             services.AddTransient<IEditCategoryUseCase, EditCategoryUseCase>();
             services.AddTransient<IGetCategoryByIdUseCase, GetCategoryByIdUseCase>();
             services.AddTransient<IDeleteCategoryUseCase, DeleteCategoryUseCase>();
+            services.AddTransient<IViewProductsUseCase, ViewProductsUseCase>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

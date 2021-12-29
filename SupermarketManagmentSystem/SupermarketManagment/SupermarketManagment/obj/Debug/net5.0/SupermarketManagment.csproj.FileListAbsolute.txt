@@ -134,3 +134,5 @@ C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\Supermar
 C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\obj\Debug\net5.0\SupermarketManagment.genruntimeconfig.cache
 C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\obj\Debug\net5.0\RazorDeclaration\Pages\EditCategoryComponent.razor.g.cs
 C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\obj\Debug\net5.0\Razor\Pages\EditCategoryComponent.razor.g.cs
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\obj\Debug\net5.0\RazorDeclaration\Pages\ProductsComponent.razor.g.cs
+C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\obj\Debug\net5.0\Razor\Pages\ProductsComponent.razor.g.cs
