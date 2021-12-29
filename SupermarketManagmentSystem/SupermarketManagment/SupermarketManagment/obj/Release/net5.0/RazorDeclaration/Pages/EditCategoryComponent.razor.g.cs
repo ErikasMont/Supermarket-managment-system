@@ -89,6 +89,7 @@ using CoreBusiness;
 #line default
 #line hidden
 #nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/editcategory/{categoryId}")]
     public partial class EditCategoryComponent : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -96,6 +97,50 @@ using CoreBusiness;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 29 "C:\Users\HP\Desktop\SMS\SupermarketManagmentSystem\SupermarketManagment\SupermarketManagment\Pages\EditCategoryComponent.razor"
+       
+
+    [Parameter]
+    public string CategoryId { get; set; }
+
+    private Category category;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        category = new Category();
+    }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        if(int.TryParse(this.CategoryId, out int iCategoryId))
+        {
+            this.category = GetCategoryByIdUseCase.Execute(iCategoryId);
+        }
+    }
+
+    private void OnValidSubmit()
+    {
+        EditCategoryUseCase.Execute(this.category);
+        NavigationManager.NavigateTo("/categories");
+    }
+
+    private void OnCancel()
+    {
+        NavigationManager.NavigateTo("/categories");
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UseCases.IEditCategoryUseCase EditCategoryUseCase { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UseCases.IGetCategoryByIdUseCase GetCategoryByIdUseCase { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591
